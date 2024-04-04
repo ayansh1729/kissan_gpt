@@ -1,0 +1,66 @@
+.side{
+    /* border: 1px solid black; */
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidemenu__button{
+    border: 1px solid hsla(0, 0%, 100%, 0.354);;
+    border-radius: 5px;
+}
+
+
+.sidemenu__button:hover{
+    background-color: rgba(255,255,255,0.1);
+    transition: ease 0.3 all;
+}
+
+.sidebarChat{
+    padding:5px;
+    text-align: left;
+    color: white;
+    border: 1px solid hsla(0, 0%, 100%, 0.354);
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.sidebarChat:hover{
+    background-color: hsla(0, 0%, 100%, 0.224);
+    transition: all 0.3s;
+}
+
+.back_button{
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+
+.side_x{
+    display: none;
+}
+
+
+@media screen and (max-width:700px){
+    .side{
+        display: none;
+    }
+    .side_x{
+        background-color: #171717;
+        display: flex;
+        flex-direction: column;
+        display: block !important;
+        width: 100% !important;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+}
